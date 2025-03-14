@@ -101,7 +101,12 @@ boxplot(base_filtrada$y_total_m_ha ~ base_filtrada$estrato1,
 
 dev.off()
 
+################################################################################
+################## NUEVO TITUTLO PARA MEJORAR LA VISUALIZACIÓN #################
+################################################################################
+
 ## Nuevo modelo
+
 
 
 library(randomForest)
