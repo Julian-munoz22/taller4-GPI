@@ -1,0 +1,3 @@
+Tras identificar la falta de fundamento para emplear una metodología clara en el primer ejercicio de la clase, se decide, en el segundo ejercicio, estructurar el proyecto ficticio a el presente modelo de predicción de ingreso de los hogares en Colombia para el año 2018, utilizando como fuente de información la Gran Encuesta Integrada de Hogares (GEIH). Para lo cual se toma como base, el modelo clásico de ecuaciones Mincerianas para predecir ingresos de una persona en función a su educación, experiencia, entre otras variables.
+
+Con el fin de realizar una correcta minería de datos, se realiza una limpieza e imputación de los valores nulos en los scripts y dan como resultados outputs con relación a las variables propuestas en el modelo de ingreso.
