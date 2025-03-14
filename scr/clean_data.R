@@ -32,7 +32,7 @@ library(tibble)
 
 ############################## Se asigna el directorio #########################
 
-base_filtrada<- read.csv("~/taller3/data_raw/base_filtrada.csv")
+base_filtrada <- read.csv("~/MeCA - Gestión de Proyectos de Investigación y Ciencia Abierta/Semana 7/taller4-GPI/data_raw/base_filtrada.csv")
 
 
 ######## Imputación de NA en la variable de Salario
@@ -48,7 +48,7 @@ base_filtrada2 <- mice::complete(base_filtrada2)
 par(mfrow=c(1,1))
 
 # Guardar el gráfico como PNG
-png("C:/Users/user/Documents/taller3/results/salario_por_hora.png", width = 800, height = 600)
+png("C:/Users/user/Documents/MeCA - Gestión de Proyectos de Investigación y Ciencia Abierta/Semana 7/taller4-GPI/results/salario_por_hora.png", width = 800, height = 600)
 
 # Generar el gráfico
 plot(density(base_filtrada$y_total_m_ha,na.rm = T),col=2,main="Salario Por Hora")
