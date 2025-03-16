@@ -1,0 +1,49 @@
+classDiagram
+    Inicio <|-- DataClean : Crea
+    Inicio <|-- DataRaw : Crea
+    Inicio <|-- Scr : Crea
+    Inicio <|-- Results : Crea
+
+    DataClean *-- Scr : Utiliza
+    DataRaw o-- DataClean : Alimenta
+    Scr .. Results : Genera
+
+    class Inicio {
+        +crearDirectorios()
+    }
+    
+    class DataClean {
+        +revisarDatos()
+        +imputarDatos()
+        +analisisEstadistico()
+        +exportarDatosLimpios()
+        <<Datos>>
+    }
+    
+    class DataRaw {
+        +cargarDatosBrutos()
+        +validarIntegridad()
+        +respaldarDatosOriginales()
+        <<Datos>>
+    }
+    
+    class Scr {
+        +construirModelo()
+        +realizarPruebas()
+        +revisarCodigo()
+        +controlCambiosGitHub()
+        +automatizarScripts()
+        +documentarCodigo()
+        <<Código>>
+    }
+    
+    class Results {
+        +generarPlots()
+        +analizarPlots()
+        +documentarResultados()
+        +presentacionFinal()
+        <<Documentación>>
+    }
+
+    DataClean <--> Scr : Datos procesados
+    Scr <--> Results : Resultados finales
