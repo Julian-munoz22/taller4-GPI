@@ -101,14 +101,11 @@ boxplot(base_filtrada$y_total_m_ha ~ base_filtrada$estrato1,
 
 dev.off()
 
-<<<<<<< HEAD
-######################### CAMBIO DIFERENTE ###################################
-=======
 ################################################################################
 ################## NUEVO TITUTLO PARA MEJORAR LA VISUALIZACIÓN #################
 ################################################################################
 
->>>>>>> mejorar-visualizacion
+
 ## Nuevo modelo
 
 
